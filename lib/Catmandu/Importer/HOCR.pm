@@ -161,7 +161,7 @@ sub _next {
 
             if ( $line ) {
 
-                $line->{text} = join("", @{ $line->{text} });
+                $line->{text} = join(" ", @{ $line->{text} });
 
             }
             last;
