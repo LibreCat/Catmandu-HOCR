@@ -115,7 +115,7 @@ sub _next {
         my $nodeType = $reader->nodeType();
         my $class = $reader->getAttribute("class");
 
-        if ( $nodeType == $start_element && $class eq "ocr_page" ) {
+        if ( $nodeType == $start_element && defined($class) && $class eq "ocr_page" ) {
 
             my $old_page = $self->current_page // +{ no => 0 };
 
@@ -130,7 +130,7 @@ sub _next {
             next;
 
         }
-        elsif ( $nodeType == $start_element && $class eq "ocr_line" ) {
+        elsif ( $nodeType == $start_element && defined($class) && $class eq "ocr_line" ) {
 
             my $title = $reader->getAttribute("title");
             my $coords = _parse_coords( $title );
@@ -147,7 +147,7 @@ sub _next {
             };
 
         }
-        elsif ( $nodeType == $start_element && ($class eq "ocr_word" || $class eq "ocrx_word") ) {
+        elsif ( $nodeType == $start_element && defined($class) && ($class eq "ocr_word" || $class eq "ocrx_word") ) {
 
             #skip this element
             $reader->read();
