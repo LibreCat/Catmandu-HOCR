@@ -1,15 +1,6 @@
-package Catmandu::HOCR;
-use Catmandu::Sane;
-
-our $VERSION = "0.01";
-
-=encoding utf8
-
-=head1 NAME
+# NAME
 
 Catmandu::HOCR - tools to work with HOCR documents
-
-=begin markdown
 
 # STATUS
 
@@ -17,11 +8,9 @@ Catmandu::HOCR - tools to work with HOCR documents
 [![Coverage](https://coveralls.io/repos/LibreCat/Catmandu-Importer-HOCR/badge.png?branch=master)](https://coveralls.io/r/LibreCat/Catmandu-HOCR)
 [![CPANTS kwalitee](http://cpants.cpanauthors.org/dist/Catmandu-HOCR.png)](http://cpants.cpanauthors.org/dist/Catmandu-HOCR)
 
-=end markdown
+# SYNOPSIS
 
-=head1 SYNOPSIS
-
-#From the command line
+\#From the command line
 
     #Extract OCR data
 
@@ -42,7 +31,7 @@ Catmandu::HOCR - tools to work with HOCR documents
 
     });
 
-=head1 EXAMPLE OUTPUT IN YAML
+# EXAMPLE OUTPUT IN YAML
 
     ---
     h: 38
@@ -57,44 +46,36 @@ Catmandu::HOCR - tools to work with HOCR documents
     y: 2717
     ...
 
-=head1 INSTALLATION
+# INSTALLATION
 
 In order to install this package you need the following system packages installed
 
-=over
+- Centos
 
-=item Centos
+    \* perl-devel
 
-* perl-devel
+    \* make
 
-* make
+    \* gcc
 
-* gcc
+    \* gcc-c++
 
-* gcc-c++
+    \* libyaml-devel
 
-* libyaml-devel
+    \* libxml2 version 2.6.21 or higher. Reason: the module XML::LibXML::Reader uses the libxml2 pull parser to read xml documents incrementally.
 
-* libxml2 version 2.6.21 or higher. Reason: the module XML::LibXML::Reader uses the libxml2 pull parser to read xml documents incrementally.
+# AUTHORS
 
-=back
+Nicolas Franck `<nicolas.franck at ugent.be>`
 
-=head1 AUTHORS
+# SEE ALSO
 
-Nicolas Franck C<< <nicolas.franck at ugent.be> >>
+[Catmandu::Importer::HOCR](https://metacpan.org/pod/Catmandu::Importer::HOCR), [XML::LibXML::Reader](https://metacpan.org/pod/XML::LibXML::Reader), [Catmandu](https://metacpan.org/pod/Catmandu), [Catmandu::Importer](https://metacpan.org/pod/Catmandu::Importer)
 
-=head1 SEE ALSO
-
-L<Catmandu::Importer::HOCR>, L<XML::LibXML::Reader>, L<Catmandu>, L<Catmandu::Importer>
-
-=head1 LICENSE AND COPYRIGHT
+# LICENSE AND COPYRIGHT
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
 by the Free Software Foundation; or the Artistic License.
 
-See L<http://dev.perl.org/licenses/> for more information.
-
-=cut
-
-1;
+See [http://dev.perl.org/licenses/](http://dev.perl.org/licenses/) for more information.
