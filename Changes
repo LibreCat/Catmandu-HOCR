@@ -1,1 +1,3 @@
 {{$NEXT}}
+  - add Catmandu::Importer::HOCR
+  - add tests

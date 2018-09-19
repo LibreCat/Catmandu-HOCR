@@ -16,3 +16,4 @@ cover_db
 cpanfile.snapshot
 local
 test
+_build_params
