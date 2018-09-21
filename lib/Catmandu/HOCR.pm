@@ -21,7 +21,7 @@ Catmandu::HOCR - tools to work with HOCR documents
 
 =head1 SYNOPSIS
 
-#From the command line
+    #From the command line
 
     #Extract OCR data
 
