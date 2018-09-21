@@ -10,7 +10,7 @@ Catmandu::HOCR - tools to work with HOCR documents
 
 # SYNOPSIS
 
-\#From the command line
+    #From the command line
 
     #Extract OCR data
 
