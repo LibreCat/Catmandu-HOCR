@@ -81,4 +81,4 @@ require_ok $pkg;
 
 }
 
-done_testing 5;
+done_testing;
